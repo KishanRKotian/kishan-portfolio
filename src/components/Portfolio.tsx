@@ -31,44 +31,149 @@ const Portfolio = () => {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="hero-gradient section-padding pt-32">
-        <div className="container-custom">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8 animate-slide-up">
-              <div>
-                <h1 className="text-5xl font-bold mb-4">
-                  Hi, I'm <span className="gradient-text">Kishan R Kotian</span>
-                </h1>
-                <p className="text-2xl text-muted-foreground mb-6">
-                  Software Engineer | Automotive HIL Validation & Automation
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Experienced automotive engineer with 2+ years in HIL validation and automation. 
-                  Passionate about problem-solving, debugging, and delivering quality-driven solutions 
-                  through Agile methodologies and cross-functional collaboration.
+      {/* Modern Hero Section */}
+      <section className="hero-gradient section-padding pt-32 relative min-h-screen flex items-center">
+        {/* Floating Background Elements */}
+        <div className="floating-element floating-1"></div>
+        <div className="floating-element floating-2"></div>
+        <div className="floating-element floating-3"></div>
+        
+        <div className="container-custom relative z-10">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Left Content */}
+            <div className="space-y-10 animate-slide-up">
+              {/* Status Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 animate-glow">
+                <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                <span className="text-sm font-medium text-primary">Available for opportunities</span>
+              </div>
+              
+              {/* Main Heading */}
+              <div className="space-y-6">
+                <div>
+                  <h1 className="text-6xl lg:text-7xl font-bold leading-tight mb-6">
+                    Hi, I'm{' '}
+                    <span className="relative">
+                      <span className="gradient-text">Kishan</span>
+                      <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-accent/20 blur-lg opacity-30"></div>
+                    </span>
+                  </h1>
+                  
+                  {/* Animated Title */}
+                  <div className="text-2xl lg:text-3xl text-muted-foreground font-light mb-4 overflow-hidden">
+                    <div className="inline-block border-r-2 border-primary animate-typing whitespace-nowrap pr-2">
+                      Software Engineer & HIL Validation Expert
+                    </div>
+                  </div>
+                </div>
+                
+                <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
+                  Transforming automotive systems through innovative{' '}
+                  <span className="text-primary font-semibold">HIL validation</span> and{' '}
+                  <span className="text-primary font-semibold">automation solutions</span>. 
+                  2+ years of driving quality and efficiency in automotive engineering.
                 </p>
               </div>
-              <div className="flex gap-4">
-                <Button variant="hero" onClick={() => scrollToSection('projects')}>
-                  View Portfolio
-                  <ArrowRight className="ml-2 h-4 w-4" />
+              
+              {/* Action Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button 
+                  variant="hero" 
+                  onClick={() => scrollToSection('projects')}
+                  className="group relative overflow-hidden"
+                >
+                  <span className="relative z-10 flex items-center">
+                    Explore My Work
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </Button>
-                <Button variant="hero-outline" onClick={() => scrollToSection('contact')}>
-                  Get In Touch
+                <Button 
+                  variant="hero-outline" 
+                  onClick={() => scrollToSection('contact')}
+                  className="group"
+                >
+                  Let's Connect
+                  <div className="ml-2 w-2 h-2 bg-primary rounded-full animate-pulse"></div>
                 </Button>
+              </div>
+              
+              {/* Quick Stats */}
+              <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border/30">
+                {[
+                  { label: 'Years Experience', value: '2+' },
+                  { label: 'Projects Delivered', value: '10+' },
+                  { label: 'Technologies', value: '8+' }
+                ].map((stat, index) => (
+                  <div key={stat.label} className="text-center animate-fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
+                    <div className="text-2xl font-bold text-primary mb-1">{stat.value}</div>
+                    <div className="text-xs text-muted-foreground font-medium">{stat.label}</div>
+                  </div>
+                ))}
               </div>
             </div>
-            <div className="flex justify-center animate-fade-in">
+            
+            {/* Right Content - Enhanced Profile */}
+            <div className="flex justify-center lg:justify-end animate-fade-in">
               <div className="relative">
-                <img
-                  src={profileImage}
-                  alt="Kishan R Kotian - Professional Profile"
-                  className="rounded-2xl w-80 h-80 object-cover card-shadow hover-lift"
-                />
-                <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground rounded-xl px-4 py-2">
-                  <span className="font-semibold">2+ Years</span>
+                {/* Glowing Background */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl blur-3xl animate-pulse"></div>
+                
+                {/* Main Profile Card */}
+                <div className="relative bg-card/50 backdrop-blur-xl border border-border/30 rounded-3xl p-8 card-shadow hover-lift">
+                  <div className="relative">
+                    <img
+                      src={profileImage}
+                      alt="Kishan R Kotian - Professional Profile"
+                      className="rounded-2xl w-80 h-80 object-cover"
+                    />
+                    
+                    {/* Floating Info Cards */}
+                    <div className="absolute -top-6 -left-6 bg-card border border-border rounded-xl px-4 py-2 shadow-lg animate-float">
+                      <div className="flex items-center gap-2">
+                        <Code className="h-4 w-4 text-primary" />
+                        <span className="font-semibold text-sm">Python Expert</span>
+                      </div>
+                    </div>
+                    
+                    <div className="absolute -bottom-6 -right-6 bg-card border border-border rounded-xl px-4 py-2 shadow-lg animate-float" style={{ animationDelay: '1s' }}>
+                      <div className="flex items-center gap-2">
+                        <Zap className="h-4 w-4 text-primary" />
+                        <span className="font-semibold text-sm">HIL Validation</span>
+                      </div>
+                    </div>
+                    
+                    <div className="absolute top-1/2 -right-8 bg-primary text-primary-foreground rounded-xl px-4 py-3 shadow-lg animate-bounce">
+                      <div className="text-center">
+                        <div className="font-bold text-lg">2+</div>
+                        <div className="text-xs opacity-90">Years</div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Tech Stack Indicators */}
+                  <div className="flex justify-center gap-2 mt-6">
+                    {['Python', 'CAPL', 'CANoe', 'Agile'].map((tech, index) => (
+                      <div 
+                        key={tech}
+                        className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full border border-primary/20 animate-fade-in"
+                        style={{ animationDelay: `${index * 0.1}s` }}
+                      >
+                        {tech}
+                      </div>
+                    ))}
+                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Scroll Indicator */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div className="flex flex-col items-center gap-2 text-muted-foreground">
+              <span className="text-sm">Scroll to explore</span>
+              <div className="w-6 h-10 border-2 border-current rounded-full flex justify-center">
+                <div className="w-1 h-3 bg-current rounded-full mt-2 animate-pulse"></div>
               </div>
             </div>
           </div>

@@ -37,9 +37,14 @@
 
     --border: 215 15% 90%;
     --input: 215 15% 90%;
-    /* Professional gradients */
+    --ring: 215 85% 55%;
+
+    /* Modern gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(215 100% 60%));
     --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hsl(215 15% 98%));
+    --gradient-modern: linear-gradient(135deg, hsl(215 100% 95%), hsl(215 100% 98%));
+    --gradient-accent: linear-gradient(45deg, hsl(215 85% 55%), hsl(220 100% 65%));
+    --gradient-floating: linear-gradient(135deg, hsl(215 100% 96%), hsl(215 50% 98%));
     
     /* Shadows */
     --shadow-soft: 0 4px 20px -4px hsl(215 25% 15% / 0.1);
@@ -118,10 +123,55 @@
   }
 }
 
-/* Professional Portfolio Components */
+/* Modern Portfolio Components */
 @layer components {
   .hero-gradient {
-    background: var(--gradient-hero);
+    background: var(--gradient-modern);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-gradient::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 200%;
+    background: radial-gradient(circle, hsl(215 100% 95% / 0.3) 0%, transparent 70%);
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .floating-element {
+    position: absolute;
+    background: var(--gradient-floating);
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: float 8s ease-in-out infinite;
+  }
+  
+  .floating-1 {
+    top: 10%;
+    right: 20%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+  }
+  
+  .floating-2 {
+    top: 60%;
+    right: 10%;
+    width: 120px;
+    height: 120px;
+    animation-delay: 2s;
+  }
+  
+  .floating-3 {
+    top: 80%;
+    left: 10%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 4s;
   }
   
   .card-shadow {
