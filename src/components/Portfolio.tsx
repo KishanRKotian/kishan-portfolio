@@ -136,19 +136,6 @@ const Portfolio = () => {
                       </div>
                     </div>
                   </div>
-                  
-                  {/* Tech Stack Indicators */}
-                  <div className="flex justify-center gap-2 mt-6">
-                    {['Python', 'CAPL', 'CANoe', 'Agile'].map((tech, index) => (
-                      <div 
-                        key={tech}
-                        className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full border border-primary/20 animate-fade-in"
-                        style={{ animationDelay: `${index * 0.1}s` }}
-                      >
-                        {tech}
-                      </div>
-                    ))}
-                  </div>
                 </div>
               </div>
             </div>
