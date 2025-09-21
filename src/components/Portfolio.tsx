@@ -128,21 +128,7 @@ const Portfolio = () => {
                       className="rounded-2xl w-80 h-80 object-cover"
                     />
                     
-                    {/* Floating Info Cards */}
-                    <div className="absolute -top-6 -left-6 bg-card border border-border rounded-xl px-4 py-2 shadow-lg animate-float">
-                      <div className="flex items-center gap-2">
-                        <Code className="h-4 w-4 text-primary" />
-                        <span className="font-semibold text-sm">Python Expert</span>
-                      </div>
-                    </div>
-                    
-                    <div className="absolute -bottom-6 -right-6 bg-card border border-border rounded-xl px-4 py-2 shadow-lg animate-float" style={{ animationDelay: '1s' }}>
-                      <div className="flex items-center gap-2">
-                        <Zap className="h-4 w-4 text-primary" />
-                        <span className="font-semibold text-sm">HIL Validation</span>
-                      </div>
-                    </div>
-                    
+                    {/* Years Experience Badge */}
                     <div className="absolute top-1/2 -right-8 bg-primary text-primary-foreground rounded-xl px-4 py-3 shadow-lg animate-bounce">
                       <div className="text-center">
                         <div className="font-bold text-lg">2+</div>
