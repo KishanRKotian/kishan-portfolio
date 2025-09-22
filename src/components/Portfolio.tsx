@@ -3,33 +3,23 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import profileImage from "@/assets/profile-photo.jpg";
-
 const Portfolio = () => {
   const scrollToSection = (sectionId: string) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById(sectionId)?.scrollIntoView({
+      behavior: 'smooth'
+    });
   };
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-lg border-b z-50 animate-fade-in">
         <div className="container-custom">
           <div className="flex items-center justify-between py-4">
             <div className="font-semibold text-xl">Kishan R Kotian</div>
             <div className="hidden md:flex space-x-8">
-              {['about', 'experience', 'skills', 'projects', 'contact'].map((section) => (
-                <button
-                  key={section}
-                  onClick={() => scrollToSection(section)}
-                  className="text-muted-foreground hover:text-foreground transition-colors capitalize"
-                >
+              {['about', 'experience', 'skills', 'projects', 'contact'].map(section => <button key={section} onClick={() => scrollToSection(section)} className="text-muted-foreground hover:text-foreground transition-colors capitalize">
                   {section}
-                </button>
-              ))}
-              <button
-                onClick={() => window.open('/certifications', '_blank')}
-                className="text-muted-foreground hover:text-foreground transition-colors capitalize"
-              >
+                </button>)}
+              <button onClick={() => window.open('/certifications', '_blank')} className="text-muted-foreground hover:text-foreground transition-colors capitalize">
                 certifications
               </button>
             </div>
@@ -67,9 +57,7 @@ const Portfolio = () => {
                   
                   {/* Animated Title */}
                   <div className="text-2xl lg:text-3xl text-muted-foreground font-light mb-4 overflow-hidden">
-                    <div className="inline-block border-r-2 border-primary animate-typing whitespace-nowrap pr-2">
-                      Software Engineer & HIL Validation Expert
-                    </div>
+                    <div className="inline-block border-r-2 border-primary animate-typing whitespace-nowrap pr-2">Software Engineer</div>
                   </div>
                 </div>
                 
@@ -83,22 +71,14 @@ const Portfolio = () => {
               
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button 
-                  variant="hero" 
-                  onClick={() => scrollToSection('projects')}
-                  className="group relative overflow-hidden"
-                >
+                <Button variant="hero" onClick={() => scrollToSection('projects')} className="group relative overflow-hidden">
                   <span className="relative z-10 flex items-center">
                     Explore My Work
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </span>
                   <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </Button>
-                <Button 
-                  variant="hero-outline" 
-                  onClick={() => scrollToSection('contact')}
-                  className="group"
-                >
+                <Button variant="hero-outline" onClick={() => scrollToSection('contact')} className="group">
                   Let's Connect
                   <div className="ml-2 w-2 h-2 bg-primary rounded-full animate-pulse"></div>
                 </Button>
@@ -106,16 +86,21 @@ const Portfolio = () => {
               
               {/* Quick Stats */}
               <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border/30">
-                {[
-                  { label: 'Years Experience', value: '2+' },
-                  { label: 'Projects Delivered', value: '10+' },
-                  { label: 'Technologies', value: '8+' }
-                ].map((stat, index) => (
-                  <div key={stat.label} className="text-center animate-fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
+                {[{
+                label: 'Years Experience',
+                value: '2+'
+              }, {
+                label: 'Projects Delivered',
+                value: '10+'
+              }, {
+                label: 'Technologies',
+                value: '8+'
+              }].map((stat, index) => <div key={stat.label} className="text-center animate-fade-in" style={{
+                animationDelay: `${index * 0.2}s`
+              }}>
                     <div className="text-2xl font-bold text-primary mb-1">{stat.value}</div>
                     <div className="text-xs text-muted-foreground font-medium">{stat.label}</div>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
             
@@ -128,17 +113,32 @@ const Portfolio = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 rounded-3xl blur-3xl animate-pulse"></div>
                   
                   {/* Secondary Glow */}
-                  <div className="absolute inset-2 bg-gradient-to-tl from-accent/20 to-primary/20 rounded-3xl blur-2xl animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+                  <div className="absolute inset-2 bg-gradient-to-tl from-accent/20 to-primary/20 rounded-3xl blur-2xl animate-pulse" style={{
+                  animationDelay: '0.5s'
+                }}></div>
                   
                   {/* Floating Particles */}
-                  <div className="absolute top-10 left-10 w-2 h-2 bg-primary/60 rounded-full animate-ping" style={{ animationDelay: '0s' }}></div>
-                  <div className="absolute top-20 right-12 w-3 h-3 bg-accent/60 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
-                  <div className="absolute bottom-16 left-8 w-1.5 h-1.5 bg-primary/40 rounded-full animate-ping" style={{ animationDelay: '2s' }}></div>
-                  <div className="absolute bottom-32 right-6 w-2.5 h-2.5 bg-accent/50 rounded-full animate-ping" style={{ animationDelay: '1.5s' }}></div>
+                  <div className="absolute top-10 left-10 w-2 h-2 bg-primary/60 rounded-full animate-ping" style={{
+                  animationDelay: '0s'
+                }}></div>
+                  <div className="absolute top-20 right-12 w-3 h-3 bg-accent/60 rounded-full animate-ping" style={{
+                  animationDelay: '1s'
+                }}></div>
+                  <div className="absolute bottom-16 left-8 w-1.5 h-1.5 bg-primary/40 rounded-full animate-ping" style={{
+                  animationDelay: '2s'
+                }}></div>
+                  <div className="absolute bottom-32 right-6 w-2.5 h-2.5 bg-accent/50 rounded-full animate-ping" style={{
+                  animationDelay: '1.5s'
+                }}></div>
                   
                   {/* Rotating Rings */}
-                  <div className="absolute inset-0 rounded-full border border-primary/20 animate-spin" style={{ animationDuration: '20s' }}></div>
-                  <div className="absolute inset-4 rounded-full border border-accent/15 animate-spin" style={{ animationDuration: '25s', animationDirection: 'reverse' }}></div>
+                  <div className="absolute inset-0 rounded-full border border-primary/20 animate-spin" style={{
+                  animationDuration: '20s'
+                }}></div>
+                  <div className="absolute inset-4 rounded-full border border-accent/15 animate-spin" style={{
+                  animationDuration: '25s',
+                  animationDirection: 'reverse'
+                }}></div>
                 </div>
                 
                 {/* Main Profile Card */}
@@ -150,11 +150,7 @@ const Portfolio = () => {
                     {/* Image Container with Enhanced Border */}
                     <div className="relative p-1 bg-gradient-to-br from-primary/40 to-accent/40 rounded-2xl">
                       <div className="bg-background rounded-2xl p-1">
-                        <img
-                          src={profileImage}
-                          alt="Kishan R Kotian - Professional Profile"
-                          className="rounded-xl w-80 h-80 object-cover shadow-2xl"
-                        />
+                        <img src={profileImage} alt="Kishan R Kotian - Professional Profile" className="rounded-xl w-80 h-80 object-cover shadow-2xl" />
                       </div>
                       
                       {/* Corner Accents */}
@@ -217,17 +213,25 @@ const Portfolio = () => {
               </div>
               
               <div className="grid grid-cols-2 gap-4">
-                {[
-                  { icon: Target, label: 'Problem Solving' },
-                  { icon: Users, label: 'Team Collaboration' },
-                  { icon: Zap, label: 'Innovation' },
-                  { icon: CheckCircle, label: 'Quality Focus' }
-                ].map(({ icon: Icon, label }) => (
-                  <div key={label} className="flex items-center gap-3 p-3 bg-secondary rounded-lg">
+                {[{
+                icon: Target,
+                label: 'Problem Solving'
+              }, {
+                icon: Users,
+                label: 'Team Collaboration'
+              }, {
+                icon: Zap,
+                label: 'Innovation'
+              }, {
+                icon: CheckCircle,
+                label: 'Quality Focus'
+              }].map(({
+                icon: Icon,
+                label
+              }) => <div key={label} className="flex items-center gap-3 p-3 bg-secondary rounded-lg">
                     <Icon className="h-5 w-5 text-primary" />
                     <span className="font-medium">{label}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
             
@@ -291,28 +295,17 @@ const Portfolio = () => {
                 <div>
                   <h4 className="font-semibold mb-3">Key Contributions</h4>
                   <div className="grid md:grid-cols-2 gap-4">
-                    {[
-                      'Automotive HIL Validation Systems',
-                      'Test Automation Framework Development', 
-                      'Agile Development Practices',
-                      'Cross-functional Team Collaboration',
-                      'Requirements Analysis & Documentation',
-                      'Quality Assurance & Testing'
-                    ].map((contribution) => (
-                      <div key={contribution} className="flex items-start gap-2">
+                    {['Automotive HIL Validation Systems', 'Test Automation Framework Development', 'Agile Development Practices', 'Cross-functional Team Collaboration', 'Requirements Analysis & Documentation', 'Quality Assurance & Testing'].map(contribution => <div key={contribution} className="flex items-start gap-2">
                         <CheckCircle className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
                         <span className="text-sm">{contribution}</span>
-                      </div>
-                    ))}
+                      </div>)}
                   </div>
                 </div>
                 
                 <div>
                   <h4 className="font-semibold mb-3">Technologies & Tools</h4>
                   <div className="flex flex-wrap gap-2">
-                    {['Python', 'CAPL', 'CANoe', 'Agile', 'HIL Systems', 'Test Automation'].map((tech) => (
-                      <Badge key={tech} variant="outline">{tech}</Badge>
-                    ))}
+                    {['Python', 'CAPL', 'CANoe', 'Agile', 'HIL Systems', 'Test Automation'].map(tech => <Badge key={tech} variant="outline">{tech}</Badge>)}
                   </div>
                 </div>
               </CardContent>
@@ -341,17 +334,10 @@ const Portfolio = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                {[
-                  'Requirement Analysis',
-                  'Team Collaboration', 
-                  'Problem Solving',
-                  'Root Cause Analysis'
-                ].map((skill) => (
-                  <div key={skill} className="flex items-center justify-between p-3 bg-secondary rounded-lg">
+                {['Requirement Analysis', 'Team Collaboration', 'Problem Solving', 'Root Cause Analysis'].map(skill => <div key={skill} className="flex items-center justify-between p-3 bg-secondary rounded-lg">
                     <span className="font-medium">{skill}</span>
                     <CheckCircle className="h-5 w-5 text-primary" />
-                  </div>
-                ))}
+                  </div>)}
               </CardContent>
             </Card>
             
@@ -365,21 +351,27 @@ const Portfolio = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  {[
-                    { category: 'Programming', skills: ['Python', 'CAPL'] },
-                    { category: 'Tools & Platforms', skills: ['Dspace (Control desk & Automation desk)', 'CANoe', 'Can Analyzer'] },
-                    { category: 'Testing & Validation', skills: ['Provetech', 'UDS', 'ETAS INCA'] },
-                    { category: 'Methodologies', skills: ['IBM Jazz', 'Agile'] }
-                  ].map(({ category, skills }) => (
-                    <div key={category}>
+                  {[{
+                  category: 'Programming',
+                  skills: ['Python', 'CAPL']
+                }, {
+                  category: 'Tools & Platforms',
+                  skills: ['Dspace (Control desk & Automation desk)', 'CANoe', 'Can Analyzer']
+                }, {
+                  category: 'Testing & Validation',
+                  skills: ['Provetech', 'UDS', 'ETAS INCA']
+                }, {
+                  category: 'Methodologies',
+                  skills: ['IBM Jazz', 'Agile']
+                }].map(({
+                  category,
+                  skills
+                }) => <div key={category}>
                       <h4 className="font-medium text-sm text-muted-foreground mb-2">{category}</h4>
                       <div className="flex flex-wrap gap-2 mb-3">
-                        {skills.map((skill) => (
-                          <Badge key={skill} variant="secondary">{skill}</Badge>
-                        ))}
+                        {skills.map(skill => <Badge key={skill} variant="secondary">{skill}</Badge>)}
                       </div>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
               </CardContent>
             </Card>
@@ -514,27 +506,15 @@ const Portfolio = () => {
               <CardContent className="space-y-4">
                 <div className="space-y-2">
                   <label className="text-sm font-medium">Name</label>
-                  <input 
-                    type="text" 
-                    className="w-full px-3 py-2 border border-input rounded-md bg-background" 
-                    placeholder="Your name"
-                  />
+                  <input type="text" className="w-full px-3 py-2 border border-input rounded-md bg-background" placeholder="Your name" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium">Email</label>
-                  <input 
-                    type="email" 
-                    className="w-full px-3 py-2 border border-input rounded-md bg-background" 
-                    placeholder="your@email.com"
-                  />
+                  <input type="email" className="w-full px-3 py-2 border border-input rounded-md bg-background" placeholder="your@email.com" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium">Message</label>
-                  <textarea 
-                    rows={4} 
-                    className="w-full px-3 py-2 border border-input rounded-md bg-background resize-none" 
-                    placeholder="Your message here..."
-                  />
+                  <textarea rows={4} className="w-full px-3 py-2 border border-input rounded-md bg-background resize-none" placeholder="Your message here..." />
                 </div>
                 <Button variant="hero" className="w-full">
                   Send Message
@@ -563,8 +543,6 @@ const Portfolio = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Portfolio;
