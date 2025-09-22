@@ -192,9 +192,7 @@ const Portfolio = () => {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">About Me</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              A dedicated professional with a passion for automotive engineering and a commitment to continuous learning
-            </p>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">A dedicated professional with a passion for engineering and a commitment to continuous learning</p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
