@@ -116,23 +116,55 @@ const Portfolio = () => {
             {/* Right Content - Enhanced Profile */}
             <div className="flex justify-center lg:justify-end animate-fade-in">
               <div className="relative">
-                {/* Glowing Background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl blur-3xl animate-pulse"></div>
+                {/* Multi-layered Animated Background */}
+                <div className="absolute inset-0">
+                  {/* Primary Glow */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 rounded-3xl blur-3xl animate-pulse"></div>
+                  
+                  {/* Secondary Glow */}
+                  <div className="absolute inset-2 bg-gradient-to-tl from-accent/20 to-primary/20 rounded-3xl blur-2xl animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+                  
+                  {/* Floating Particles */}
+                  <div className="absolute top-10 left-10 w-2 h-2 bg-primary/60 rounded-full animate-ping" style={{ animationDelay: '0s' }}></div>
+                  <div className="absolute top-20 right-12 w-3 h-3 bg-accent/60 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
+                  <div className="absolute bottom-16 left-8 w-1.5 h-1.5 bg-primary/40 rounded-full animate-ping" style={{ animationDelay: '2s' }}></div>
+                  <div className="absolute bottom-32 right-6 w-2.5 h-2.5 bg-accent/50 rounded-full animate-ping" style={{ animationDelay: '1.5s' }}></div>
+                  
+                  {/* Rotating Rings */}
+                  <div className="absolute inset-0 rounded-full border border-primary/20 animate-spin" style={{ animationDuration: '20s' }}></div>
+                  <div className="absolute inset-4 rounded-full border border-accent/15 animate-spin" style={{ animationDuration: '25s', animationDirection: 'reverse' }}></div>
+                </div>
                 
                 {/* Main Profile Card */}
-                <div className="relative bg-card/50 backdrop-blur-xl border border-border/30 rounded-3xl p-8 card-shadow hover-lift">
+                <div className="relative bg-gradient-to-br from-card/60 to-card/40 backdrop-blur-xl border border-border/40 rounded-3xl p-8 card-shadow hover-lift overflow-hidden">
+                  {/* Inner Glow Effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 rounded-3xl"></div>
+                  
                   <div className="relative">
-                    <img
-                      src={profileImage}
-                      alt="Kishan R Kotian - Professional Profile"
-                      className="rounded-2xl w-80 h-80 object-cover"
-                    />
+                    {/* Image Container with Enhanced Border */}
+                    <div className="relative p-1 bg-gradient-to-br from-primary/40 to-accent/40 rounded-2xl">
+                      <div className="bg-background rounded-2xl p-1">
+                        <img
+                          src={profileImage}
+                          alt="Kishan R Kotian - Professional Profile"
+                          className="rounded-xl w-80 h-80 object-cover shadow-2xl"
+                        />
+                      </div>
+                      
+                      {/* Corner Accents */}
+                      <div className="absolute top-2 left-2 w-4 h-4 border-t-2 border-l-2 border-primary/60 rounded-tl-lg"></div>
+                      <div className="absolute top-2 right-2 w-4 h-4 border-t-2 border-r-2 border-accent/60 rounded-tr-lg"></div>
+                      <div className="absolute bottom-2 left-2 w-4 h-4 border-b-2 border-l-2 border-accent/60 rounded-bl-lg"></div>
+                      <div className="absolute bottom-2 right-2 w-4 h-4 border-b-2 border-r-2 border-primary/60 rounded-br-lg"></div>
+                    </div>
                     
-                    {/* Years Experience Badge */}
-                    <div className="absolute top-1/2 -right-8 bg-primary text-primary-foreground rounded-xl px-4 py-3 shadow-lg animate-bounce">
-                      <div className="text-center">
+                    {/* Years Experience Badge - Enhanced */}
+                    <div className="absolute top-1/2 -right-8 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground rounded-xl px-4 py-3 shadow-2xl animate-bounce border border-primary/30 backdrop-blur-sm">
+                      <div className="text-center relative">
                         <div className="font-bold text-lg">2+</div>
                         <div className="text-xs opacity-90">Years</div>
+                        {/* Badge Glow */}
+                        <div className="absolute inset-0 bg-primary/20 blur-xl rounded-xl -z-10"></div>
                       </div>
                     </div>
                   </div>
