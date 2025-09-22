@@ -2,7 +2,7 @@ import { Mail, Linkedin, Code, Users, Target, Zap, ArrowRight, CheckCircle, Phon
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import profileImage from "@/assets/kishan-profile.jpg";
+import profileImage from "@/assets/profile-photo.jpg";
 
 const Portfolio = () => {
   const scrollToSection = (sectionId: string) => {
