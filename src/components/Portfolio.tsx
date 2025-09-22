@@ -26,6 +26,12 @@ const Portfolio = () => {
                   {section}
                 </button>
               ))}
+              <button
+                onClick={() => window.open('/certifications', '_blank')}
+                className="text-muted-foreground hover:text-foreground transition-colors capitalize"
+              >
+                certifications
+              </button>
             </div>
           </div>
         </div>
