@@ -6,25 +6,12 @@ import { Card, CardContent } from "@/components/ui/card";
 const Certifications = () => {
   const [currentCertIndex, setCurrentCertIndex] = useState(0);
 
-  // Sample certificates data - replace with your actual certificates
   const certificates = [
     {
       id: 1,
-      title: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
-      imageUrl: "/placeholder-cert.jpg", // Replace with actual certificate image
-    },
-    {
-      id: 2,
-      title: "Certified ScrumMaster (CSM)",
-      issuer: "Scrum Alliance",
-      imageUrl: "/placeholder-cert.jpg", // Replace with actual certificate image
-    },
-    {
-      id: 3,
-      title: "Python Programming Certification",
-      issuer: "Python Institute",
-      imageUrl: "/placeholder-cert.jpg", // Replace with actual certificate image
+      title: "Generative AI Mastermind",
+      issuer: "Outskill",
+      imageUrl: "/src/assets/generative-ai-certificate.png",
     }
   ];
 
@@ -91,20 +78,11 @@ const Certifications = () => {
 
                 {/* Certificate Image */}
                 <div className="flex justify-center">
-                  <div className="w-full max-w-2xl aspect-[4/3] bg-gradient-to-br from-muted to-muted/50 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
-                    <div className="text-center space-y-4">
-                      <Award className="h-16 w-16 text-muted-foreground mx-auto" />
-                      <div>
-                        <p className="text-lg font-medium text-muted-foreground">Certificate Image</p>
-                        <p className="text-sm text-muted-foreground mt-2">
-                          {currentCert.title}
-                        </p>
-                        <p className="text-sm text-muted-foreground">
-                          {currentCert.issuer}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                  <img 
+                    src={currentCert.imageUrl} 
+                    alt={`${currentCert.title} certificate from ${currentCert.issuer}`}
+                    className="w-full max-w-2xl rounded-lg shadow-lg"
+                  />
                 </div>
               </div>
             </CardContent>
