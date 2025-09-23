@@ -17,7 +17,7 @@ const Portfolio = () => {
           <div className="flex items-center justify-between py-4">
             <div className="font-semibold text-xl">Kishan R Kotian</div>
             <div className="hidden md:flex space-x-8">
-              {['about', 'experience', 'skills', 'projects', 'certifications', 'contact'].map(section => <button key={section} onClick={() => section === 'certifications' ? window.open('/certifications', '_blank') : scrollToSection(section)} className="text-muted-foreground hover:text-foreground transition-colors capitalize">
+              {['about', 'experience', 'skills', 'projects', 'certifications', 'contact'].map(section => <button key={section} onClick={() => section === 'certifications' ? window.location.href = '/certifications' : scrollToSection(section)} className="text-muted-foreground hover:text-foreground transition-colors capitalize">
                   {section}
                 </button>)}
             </div>
