@@ -12,7 +12,7 @@ const Certifications = () => {
       id: 1,
       title: "Generative AI Mastermind",
       issuer: "Outskill",
-      imageUrl: "/src/assets/generative-ai-certificate.png",
+      imageUrl: generativeAiCert,
     }
   ];
 
