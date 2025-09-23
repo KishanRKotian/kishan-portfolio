@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import generativeAiCert from "../assets/generative-ai-certificate.png";
 
 const Certifications = () => {
   const [currentCertIndex, setCurrentCertIndex] = useState(0);
