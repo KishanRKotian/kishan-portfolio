@@ -37,7 +37,7 @@ const Certifications = () => {
             </div>
             <Button
               variant="outline"
-              onClick={() => window.close()}
+              onClick={() => navigate("src/main.tsx")}
               className="hover:bg-secondary"
             >
               Previous Window
