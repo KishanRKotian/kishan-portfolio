@@ -91,9 +91,6 @@ const Portfolio = () => {
                 label: 'Years Experience',
                 value: '2+'
               }, {
-                label: 'Projects Delivered',
-                value: '10+'
-              }, {
                 label: 'Technologies',
                 value: '8+'
               }].map((stat, index) => <div key={stat.label} className="text-center animate-fade-in" style={{
