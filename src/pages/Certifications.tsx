@@ -115,14 +115,6 @@ const Certifications = () => {
             <ChevronRight className="h-4 w-4" />
           </Button>
         </div>
-
-        {/* Instructions */}
-        <div className="text-center mt-12 p-6 bg-muted/30 rounded-lg">
-          <h3 className="font-semibold mb-2">Add Your Certificates</h3>
-          <p className="text-muted-foreground text-sm">
-            Upload your certificate images to the public folder and update the imageUrl paths in the certificates array.
-          </p>
-        </div>
       </main>
     </div>
   );
