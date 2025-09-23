@@ -37,7 +37,7 @@ const Certifications = () => {
             </div>
             <Button
               variant="outline"
-              onClick={() => navigate("/")}
+              onClick={() => navigate("/dashboard")} 
               className="hover:bg-secondary"
             >
               Previous Window
