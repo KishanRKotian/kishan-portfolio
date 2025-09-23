@@ -476,19 +476,18 @@ const Portfolio = () => {
                     </a>
                   </div>
                 </div>
-                
-                <div className="flex items-center gap-4 p-4 bg-secondary rounded-lg">
-                  <Linkedin className="h-5 w-5 text-primary" />
+                <div
+                    className="flex items-center gap-4 p-4 bg-secondary rounded-lg cursor-pointer"
+                    onClick={() => window.open("https://www.linkedin.com/in/kishan-r-kotian/", "_blank")}
+                    >
+                   <Linkedin className="h-5 w-5 text-primary" />
                   <div>
-                    <p className="font-medium">LinkedIn</p>
-                    <a href="https://www.linkedin.com/in/kishan-r-kotian/" 
-                       target="_blank"
-                       rel="noopener noreferrer"
-                      className="text-primary hover:underline">
-                      Connect on LinkedIn
-                    </a>
-                  </div>
-                </div>
+                  <p className="font-medium">LinkedIn</p>
+                  <span className="text-primary hover:underline">Connect on LinkedIn</span>
+        </div>
+       </div>
+
+                
               </div>
             </div>
             
