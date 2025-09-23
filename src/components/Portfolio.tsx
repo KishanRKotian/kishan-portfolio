@@ -481,7 +481,7 @@ const Portfolio = () => {
                   <Linkedin className="h-5 w-5 text-primary" />
                   <div>
                     <p className="font-medium">LinkedIn</p>
-                    <a href="www.linkedin.com/in/kishan-r-kotian/" 
+                    <a href="https://www.linkedin.com/in/kishan-r-kotian/" 
                        target="_blank"
                        rel="noopener noreferrer"
                       className="text-primary hover:underline">
