@@ -2,6 +2,7 @@ import { Mail, Linkedin, Code, Users, Target, Zap, ArrowRight, CheckCircle, Phon
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { ContactForm } from "@/components/ContactForm";
 import profileImage from "@/assets/profile-photo.jpg";
 const Portfolio = () => {
   const scrollToSection = (sectionId: string) => {
@@ -499,23 +500,8 @@ const Portfolio = () => {
               <CardHeader>
                 <CardTitle>Send a Message</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="space-y-2">
-                  <label className="text-sm font-medium">Name</label>
-                  <input type="text" className="w-full px-3 py-2 border border-input rounded-md bg-background" placeholder="Your name" />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-medium">Email</label>
-                  <input type="email" className="w-full px-3 py-2 border border-input rounded-md bg-background" placeholder="your@email.com" />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-medium">Message</label>
-                  <textarea rows={4} className="w-full px-3 py-2 border border-input rounded-md bg-background resize-none" placeholder="Your message here..." />
-                </div>
-                <Button variant="hero" className="w-full">
-                  Send Message
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+              <CardContent>
+                <ContactForm />
               </CardContent>
             </Card>
           </div>
