@@ -40,7 +40,7 @@ const Certifications = () => {
               onClick={() => window.close()}
               className="hover:bg-secondary"
             >
-              Close Window
+              Previous Window
             </Button>
           </div>
         </div>
