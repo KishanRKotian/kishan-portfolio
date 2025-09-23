@@ -37,7 +37,7 @@ const Certifications = () => {
             </div>
             <Button
               variant="outline"
-              onClick={() => (window.location.href = "/pages/main")} 
+              onClick={() => (window.location.href = "/")} 
               className="hover:bg-secondary"
             >
               Previous Window
