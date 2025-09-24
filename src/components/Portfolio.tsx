@@ -287,7 +287,7 @@ const Portfolio = () => {
                   <h5 className="font-medium mb-2">Key Achievements</h5>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Strong foundation in software engineering principles</li>
-                    <li>• Specialized in automation and validation systems</li>
+                    <li>• Proficient in data analysis, visualization, and interpretation for decision-making</li>
                     <li>• Project leadership and collaborative development</li>
                   </ul>
                 </div>
@@ -311,7 +311,7 @@ const Portfolio = () => {
                 <div className="flex justify-between items-start">
                   <div>
                     <CardTitle className="text-2xl">Software Engineer</CardTitle>
-                    <p className="text-primary font-semibold text-lg">Alten Global Technologie Pvt Ltd.</p>
+                    <p className="text-primary font-semibold text-lg">Alten Global Technologies Pvt Ltd.</p>
                     <p className="text-muted-foreground">September 2023 - Present</p>
                   </div>
                   <Badge variant="secondary" className="bg-primary/10 text-primary">Current</Badge>
@@ -326,7 +326,7 @@ const Portfolio = () => {
                 <div>
                   <h4 className="font-semibold mb-3">Key Contributions</h4>
                   <div className="grid md:grid-cols-2 gap-4">
-                    {['Automotive HIL Validation Systems', 'Test Automation Framework Development', 'Agile Development Practices', 'Cross-functional Team Collaboration', 'Requirements Analysis & Documentation', 'Quality Assurance & Testing'].map(contribution => <div key={contribution} className="flex items-start gap-2">
+                    {['Automotive HIL Validation Systems', 'Test Automation', 'Agile Project Execution', 'Cross-functional Team Collaboration', 'Requirements Analysis & Documentation', 'Quality Assurance & Testing'].map(contribution => <div key={contribution} className="flex items-start gap-2">
                         <CheckCircle className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
                         <span className="text-sm">{contribution}</span>
                       </div>)}
@@ -336,7 +336,7 @@ const Portfolio = () => {
                 <div>
                   <h4 className="font-semibold mb-3">Technologies & Tools</h4>
                   <div className="flex flex-wrap gap-2">
-                    {['Python', 'CAPL', 'CANoe', 'Agile', 'HIL Systems', 'Test Automation'].map(tech => <Badge key={tech} variant="outline">{tech}</Badge>)}
+                    {['Python', 'CANoe', 'HIL Systems', 'Test Automation', 'SQL'].map(tech => <Badge key={tech} variant="outline">{tech}</Badge>)}
                   </div>
                 </div>
               </CardContent>
@@ -387,13 +387,16 @@ const Portfolio = () => {
                   skills: ['Python', 'CAPL']
                 }, {
                   category: 'Tools & Platforms',
-                  skills: ['Dspace (Control desk & Automation desk)', 'CANoe', 'Can Analyzer']
+                  skills: ['Dspace (Control desk & Automation desk)', 'CANoe', 'Can Analyzer', 'Provetech', 'ETAS INCA', 'IBM Jazz']
                 }, {
-                  category: 'Testing & Validation',
-                  skills: ['Provetech', 'UDS', 'ETAS INCA']
+                  category: 'Protocols',
+                  skills: ['CAN', 'UDS']
                 }, {
+                  category: 'Software & Tools',
+                  skills: ['Microsoft Word', 'Microsoft Excel', 'Microsoft PowerPoint', 'SQL']
+                }, {                    
                   category: 'Methodologies',
-                  skills: ['IBM Jazz', 'Agile']
+                  skills: ['Agile - Scrum']
                 }].map(({
                   category,
                   skills
