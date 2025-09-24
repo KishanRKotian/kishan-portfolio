@@ -506,9 +506,8 @@ const Portfolio = () => {
               <div>
                 <h3 className="text-2xl font-semibold mb-6">Let's Connect</h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  I'm always interested in discussing new opportunities in automotive engineering, 
-                  HIL validation, and automation. Feel free to reach out for collaborations or 
-                  professional discussions.
+                  I'm always interested in discussing new opportunities.
+                  Feel free to reach out for collaborations or professional discussions.
                 </p>
               </div>
               
