@@ -365,7 +365,7 @@ const Portfolio = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                {['Requirement Analysis', 'Team Collaboration', 'Problem Solving', 'Root Cause Analysis'].map(skill => <div key={skill} className="flex items-center justify-between p-3 bg-secondary rounded-lg">
+                {['Requirement Analysis', 'Team Collaboration', 'Problem Solving', 'Root Cause Analysis', 'Strong interpersonal and communication abilities'].map(skill => <div key={skill} className="flex items-center justify-between p-3 bg-secondary rounded-lg">
                     <span className="font-medium">{skill}</span>
                     <CheckCircle className="h-5 w-5 text-primary" />
                   </div>)}
