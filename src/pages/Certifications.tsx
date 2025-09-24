@@ -31,6 +31,12 @@ const Certifications = () => {
       title: "SQL",
       issuer: "Cognitive Class",
       imageUrl: "/lovable-uploads/1b3349d8-c466-47f7-bc11-cf04d071fc34.png",
+    },
+    {
+      id: 5,
+      title: "International Conference on Artificial Intelligence and Data Engineering",
+      issuer: "IEEE",
+      imageUrl: "/lovable-uploads/deb32607-b938-4e83-8d28-84b8783aa533.png",
     }
   ];
 
