@@ -60,10 +60,10 @@ const Portfolio = () => {
                 </div>
                 
                 <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
-                  Transforming automotive systems through innovative{' '}
-                  <span className="text-primary font-semibold">HIL validation</span> and{' '}
-                  <span className="text-primary font-semibold">automation solutions</span>. 
-                  2+ years of driving quality and efficiency in automotive engineering.
+                  Software engineer with a strong foundation in validation engineering,ensuring{' '}
+                  <span className="text-primary font-semibold">quality</span> and{' '}
+                  <span className="text-primary font-semibold">reliability</span>. 
+                  in every solution. Skilled at combining problem-solving with automation and modern technologies to deliver impactful results.
                 </p>
               </div>
               
