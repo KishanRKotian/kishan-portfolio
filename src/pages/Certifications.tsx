@@ -19,6 +19,12 @@ const Certifications = () => {
       title: "The Scrum Framework: A Beginner's Guide",
       issuer: "Stellantis",
       imageUrl: "/lovable-uploads/5bfb2992-4901-4e45-9639-dafaf6056903.png",
+    },
+    {
+      id: 3,
+      title: "Python Workshop",
+      issuer: "NMAM Institute of Technology",
+      imageUrl: "/lovable-uploads/dc33c85b-967b-43c2-ade1-364bd625f7bc.png",
     }
   ];
 
