@@ -428,28 +428,30 @@ const Portfolio = () => {
             <Card className="card-shadow hover-lift">
               <CardHeader>
                 <CardTitle className="text-xl">Powertrain Systems Validation</CardTitle>
-                <p className="text-muted-foreground">HIL Validation & Testing Framework</p>
+                <p className="text-muted-foreground">Hardware in Loop Validation</p>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">
                   Comprehensive HIL validation system for powertrain components including 
-                  requirement analysis, test execution, and automated defect tracking.
+                  requirement analysis, test execution, defect raising and tracking.
                 </p>
                 
                 <div>
                   <h4 className="font-medium mb-2">Key Achievements</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• HIL validation and comprehensive testing</li>
                     <li>• Requirement analysis and documentation</li>
-                    <li>• Automated test execution frameworks</li>
-                    <li>• Defect tracking and reporting systems</li>
+                    <li>• HIL validation & system testing</li>
+                    <li>• Defect raising and tracking</li>
+                    <li>• Root cause analysis of defects</li>
+                    <li>• Regression Testing</li>
                   </ul>
                 </div>
                 
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="outline">HIL Testing</Badge>
-                  <Badge variant="outline">Validation</Badge>
-                  <Badge variant="outline">Automation</Badge>
+                  <Badge variant="outline">System Testing</Badge>
+                  <Badge variant="outline">Signal Monitoring</Badge>
+                  <Badge variant="outline">Test case Analysis</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -480,6 +482,7 @@ const Portfolio = () => {
                   <Badge variant="outline">Python</Badge>
                   <Badge variant="outline">HSIT</Badge>
                   <Badge variant="outline">Test Scripts</Badge>
+                  <Badge variant="outline">Automation</Badge>
                 </div>
               </CardContent>
             </Card>
