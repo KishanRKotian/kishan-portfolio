@@ -464,14 +464,14 @@ const Portfolio = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">
-                  Advanced automation framework for Motor Control Unit testing with 
-                  Python-based HIL scripts and comprehensive HSIT environment execution.
+                  Automation testing for Motor Control Unit with 
+                  Python-based scripts and comprehensive HSIT environment execution.
                 </p>
                 
                 <div>
                   <h4 className="font-medium mb-2">Technical Contributions</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Python-based automated HIL test scripts</li>
+                    <li>• Python-based automated test scripts</li>
                     <li>• HSIT test environment execution</li>
                     <li>• Comprehensive defect reporting</li>
                     <li>• Root cause analysis and resolution</li>
