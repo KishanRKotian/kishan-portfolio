@@ -1,14 +1,19 @@
-import { Mail, Linkedin, Code, Users, Target, Zap, ArrowRight, CheckCircle, Phone, MapPin } from "lucide-react";
+import { Mail, Linkedin, Code, Users, Target, Zap, ArrowRight, CheckCircle, Phone, MapPin, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ContactForm } from "@/components/ContactForm";
 import profileImage from "@/assets/profile-photo.jpg";
+import { useState } from "react";
+
 const Portfolio = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({
       behavior: 'smooth'
     });
+    setIsMobileMenuOpen(false);
   };
   return <div className="min-h-screen bg-background">
       {/* Navigation */}
@@ -16,12 +21,48 @@ const Portfolio = () => {
         <div className="container-custom">
           <div className="flex items-center justify-between py-4">
             <div className="font-semibold text-xl">Kishan R Kotian</div>
+            
+            {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
-              {['about', 'experience', 'skills', 'projects', 'certifications', 'contact'].map(section => <button key={section} onClick={() => section === 'certifications' ? window.location.href = '/certifications' : scrollToSection(section)} className="text-muted-foreground hover:text-foreground transition-colors capitalize">
+              {['about', 'experience', 'skills', 'projects', 'certifications', 'contact'].map(section => 
+                <button 
+                  key={section} 
+                  onClick={() => section === 'certifications' ? window.location.href = '/certifications' : scrollToSection(section)} 
+                  className="text-muted-foreground hover:text-foreground transition-colors capitalize"
+                >
                   {section}
-                </button>)}
+                </button>
+              )}
             </div>
+
+            {/* Mobile Menu Button */}
+            <button 
+              className="md:hidden p-2 text-muted-foreground hover:text-foreground transition-colors"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle mobile menu"
+            >
+              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
           </div>
+
+          {/* Mobile Navigation Menu */}
+          {isMobileMenuOpen && (
+            <div className="md:hidden absolute top-full left-0 w-full bg-background/95 backdrop-blur-lg border-b shadow-lg animate-fade-in">
+              <div className="container-custom py-4">
+                <div className="flex flex-col space-y-4">
+                  {['about', 'experience', 'skills', 'projects', 'certifications', 'contact'].map(section => 
+                    <button 
+                      key={section} 
+                      onClick={() => section === 'certifications' ? window.location.href = '/certifications' : scrollToSection(section)} 
+                      className="text-left py-2 px-4 text-muted-foreground hover:text-foreground hover:bg-secondary/50 transition-colors capitalize rounded-md"
+                    >
+                      {section}
+                    </button>
+                  )}
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
