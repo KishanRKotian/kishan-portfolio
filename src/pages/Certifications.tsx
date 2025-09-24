@@ -25,6 +25,12 @@ const Certifications = () => {
       title: "Python Workshop",
       issuer: "NMAM Institute of Technology",
       imageUrl: "/lovable-uploads/dc33c85b-967b-43c2-ade1-364bd625f7bc.png",
+    },
+    {
+      id: 4,
+      title: "SQL",
+      issuer: "Cognitive Class",
+      imageUrl: "/lovable-uploads/1b3349d8-c466-47f7-bc11-cf04d071fc34.png",
     }
   ];
 
