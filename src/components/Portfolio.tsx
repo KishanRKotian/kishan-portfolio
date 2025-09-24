@@ -234,15 +234,14 @@ const Portfolio = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <div>
-                <h3 className="text-2xl font-semibold mb-4">Career Goals & Philosophy</h3>
+                <h3 className="text-2xl font-semibold mb-4">Career Goals</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  I thrive on tackling complex challenges in automotive validation and automation. 
-                  My approach combines analytical thinking with collaborative problem-solving, 
-                  always striving to deliver innovative solutions that drive efficiency and quality.
+                  Passionate about innovation and quality, I enjoy tackling challenges that push me to think differently. 
+                  I believe in teamwork, adaptability, and continuous learning to deliver solutions that create real impact and stand the test of time.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  With a strong foundation in Agile methodologies, I believe in continuous improvement, 
-                  knowledge sharing, and building robust systems that stand the test of time.
+                 My approach blends analytical thinking with collaboration, ensuring efficiency, scalability, and quality in every project. 
+                 With a strong foundation in Agile practices, I focus on continuous improvement, knowledge sharing, and building impactful systems that last.
                 </p>
               </div>
               
