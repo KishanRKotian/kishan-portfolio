@@ -508,8 +508,8 @@ const Portfolio = () => {
       <footer className="bg-foreground text-background py-8">
         <div className="container-custom">
           <div className="text-center">
-            <p className="font-semibold text-lg mb-2">Kishan R Kotian</p>
-            <p className="text-background/80 mb-4">Software Engineer | Automotive HIL Validation & Automation</p>
+            <p className="font-semibold text-lg mb-2">© 2025 Kishan R Kotian</p>
+            <p className="text-background/80 mb-4">Always open to learning and collaboration</p>
             <div className="flex justify-center gap-4">
               <Button variant="ghost" size="sm" className="text-background hover:bg-background/10">
                 <Mail className="h-4 w-4" />
