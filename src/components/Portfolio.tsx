@@ -5,10 +5,8 @@ import { Badge } from "@/components/ui/badge";
 import { ContactForm } from "@/components/ContactForm";
 import profileImage from "@/assets/profile-photo.jpg";
 import { useState } from "react";
-
 const Portfolio = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({
       behavior: 'smooth'
@@ -24,45 +22,27 @@ const Portfolio = () => {
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
-              {['about', 'experience', 'skills', 'projects', 'certifications', 'contact'].map(section => 
-                <button 
-                  key={section} 
-                  onClick={() => section === 'certifications' ? window.location.href = '/certifications' : scrollToSection(section)} 
-                  className="text-muted-foreground hover:text-foreground transition-colors capitalize"
-                >
+              {['about', 'experience', 'skills', 'projects', 'certifications', 'contact'].map(section => <button key={section} onClick={() => section === 'certifications' ? window.location.href = '/certifications' : scrollToSection(section)} className="text-muted-foreground hover:text-foreground transition-colors capitalize">
                   {section}
-                </button>
-              )}
+                </button>)}
             </div>
 
             {/* Mobile Menu Button */}
-            <button 
-              className="md:hidden p-2 text-muted-foreground hover:text-foreground transition-colors"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label="Toggle mobile menu"
-            >
+            <button className="md:hidden p-2 text-muted-foreground hover:text-foreground transition-colors" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} aria-label="Toggle mobile menu">
               {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
 
           {/* Mobile Navigation Menu */}
-          {isMobileMenuOpen && (
-            <div className="md:hidden absolute top-full left-0 w-full bg-background/95 backdrop-blur-lg border-b shadow-lg animate-fade-in">
+          {isMobileMenuOpen && <div className="md:hidden absolute top-full left-0 w-full bg-background/95 backdrop-blur-lg border-b shadow-lg animate-fade-in">
               <div className="container-custom py-4">
                 <div className="flex flex-col space-y-4">
-                  {['about', 'experience', 'skills', 'projects', 'certifications', 'contact'].map(section => 
-                    <button 
-                      key={section} 
-                      onClick={() => section === 'certifications' ? window.location.href = '/certifications' : scrollToSection(section)} 
-                      className="text-left py-2 px-4 text-muted-foreground hover:text-foreground hover:bg-secondary/50 transition-colors capitalize rounded-md"
-                    >
+                  {['about', 'experience', 'skills', 'projects', 'certifications', 'contact'].map(section => <button key={section} onClick={() => section === 'certifications' ? window.location.href = '/certifications' : scrollToSection(section)} className="text-left py-2 px-4 text-muted-foreground hover:text-foreground hover:bg-secondary/50 transition-colors capitalize rounded-md">
                       {section}
-                    </button>
-                  )}
+                    </button>)}
                 </div>
               </div>
-            </div>
-          )}
+            </div>}
         </div>
       </nav>
 
@@ -394,7 +374,7 @@ const Portfolio = () => {
                 }, {
                   category: 'Software & Tools',
                   skills: ['Microsoft Word', 'Microsoft Excel', 'Microsoft PowerPoint', 'SQL']
-                }, {                    
+                }, {
                   category: 'Methodologies',
                   skills: ['Agile - Scrum']
                 }].map(({
@@ -437,7 +417,8 @@ const Portfolio = () => {
                 </p>
                 
                 <div>
-                  <h4 className="font-medium mb-2">Key Achievements</h4>
+                  <h4 className="font-medium mb-2">Technical Contributions
+                </h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Requirement analysis and documentation</li>
                     <li>• HIL validation & system testing</li>
@@ -521,10 +502,7 @@ const Portfolio = () => {
                     </a>
                   </div>
                 </div>
-                <div
-                    className="flex items-center gap-4 p-4 bg-secondary rounded-lg cursor-pointer"
-                    onClick={() => window.open("https://www.linkedin.com/in/kishan-r-kotian/", "_blank")}
-                    >
+                <div className="flex items-center gap-4 p-4 bg-secondary rounded-lg cursor-pointer" onClick={() => window.open("https://www.linkedin.com/in/kishan-r-kotian/", "_blank")}>
                    <Linkedin className="h-5 w-5 text-primary" />
                   <div>
                   <p className="font-medium">LinkedIn</p>
