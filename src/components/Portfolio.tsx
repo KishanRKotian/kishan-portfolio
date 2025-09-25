@@ -420,7 +420,7 @@ const Portfolio = () => {
                   <h4 className="font-medium mb-2">Technical Contributions
                 </h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Requirement analysis and documentation</li>
+                    <li>• Requirement analysis </li>
                     <li>• HIL validation & system testing</li>
                     <li>• Defect raising and tracking</li>
                     <li>• Root cause analysis of defects</li>
