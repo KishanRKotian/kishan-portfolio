@@ -16,7 +16,7 @@ const Certifications = () => {
     },
     {
       id: 2,
-      title: "The Scrum Framework: A Beginner's Guide",
+      title: "The Scrum Framework",
       issuer: "Stellantis",
       imageUrl: "/lovable-uploads/5bfb2992-4901-4e45-9639-dafaf6056903.png",
     },
