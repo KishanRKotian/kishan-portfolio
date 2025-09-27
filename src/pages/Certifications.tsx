@@ -37,6 +37,12 @@ const Certifications = () => {
       title: "International Conference on Artificial Intelligence and Data Engineering",
       issuer: "IEEE",
       imageUrl: "/lovable-uploads/deb32607-b938-4e83-8d28-84b8783aa533.png",
+    },
+    {
+      id: 6,
+      title: "Gen AI in Data Analytics",
+      issuer: "Meta",
+      imageUrl: "/lovable-uploads/meta-gen-ai-certificate.png",
     }
   ];
 
