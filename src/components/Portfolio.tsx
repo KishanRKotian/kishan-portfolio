@@ -291,7 +291,7 @@ const Portfolio = () => {
                 <div className="flex justify-between items-start">
                   <div>
                     <CardTitle className="text-2xl">Software Engineer</CardTitle>
-                    <p className="text-primary font-semibold text-lg">Alten Global Technologies Pvt Ltd.</p>
+                    <p className="text-primary font-semibold text-lg">Alten India</p>
                     <p className="text-muted-foreground">September 2023 - Present</p>
                   </div>
                   <Badge variant="secondary" className="bg-primary/10 text-primary">Current</Badge>
