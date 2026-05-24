@@ -107,7 +107,7 @@ const Portfolio = () => {
               <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border/30">
                 {[{
                 label: 'Years Experience',
-                value: '2+'
+                value: '3'
               }, {
                 label: 'Technologies',
                 value: '8+'
@@ -179,7 +179,7 @@ const Portfolio = () => {
                     {/* Years Experience Badge - Enhanced */}
                     <div className="absolute top-1/2 -right-8 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground rounded-xl px-4 py-3 shadow-2xl animate-bounce border border-primary/30 backdrop-blur-sm">
                       <div className="text-center relative">
-                        <div className="font-bold text-lg">2+</div>
+                        <div className="font-bold text-lg">3</div>
                         <div className="text-xs opacity-90">Years</div>
                         {/* Badge Glow */}
                         <div className="absolute inset-0 bg-primary/20 blur-xl rounded-xl -z-10"></div>
